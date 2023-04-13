@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <img src={logo} className="App-logo" alt="logo" />
       <p>bac dev</p>
       <p>Xin chao {student.name} - {age} - {isMale ? 'Male' : 'Female'}</p>
       {isMale && "You are handsome"}

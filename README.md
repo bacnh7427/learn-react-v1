@@ -17,7 +17,10 @@ src
 |
 |__ App.js
 ```
+
 ***
+
+## Lý thuyết
 - Setup npm, nvm, nvx
 - Chạy lệnh khởi tạo dự án: npx create-react-app learn-reactjs
 - cd vào thư mục learn-reactjs và npm start để chạy
@@ -30,3 +33,7 @@ src
 - State là gì?
     State được tạo ra và quản lý bởi component hiện tại
     State được dùng cho những dữ liệu có khả năng sẽ thay đổi
+
+
+- Dùng Extension: Reactjs code snippets cho VS code
+- Khi tạo 1 component mới thì gõ: rsfp (=> tạo component mới nhanh)

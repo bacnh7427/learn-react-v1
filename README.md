@@ -34,6 +34,10 @@ src
     State được tạo ra và quản lý bởi component hiện tại
     State được dùng cho những dữ liệu có khả năng sẽ thay đổi
 
+- Props vs State
+    - Truyền dữ liệu từ cha xuống con: Props
+    - Truyền dữ liệu giữa component ngang hàng: để state trên component cha,rồi từ cha truyền ngược xuống component con.
+    - Truyền dữ liệu giữa các trang khác nhau: dùng Redux.
 
 - Dùng Extension: Reactjs code snippets cho VS code
 - Khi tạo 1 component mới thì gõ: rsfp (=> tạo component mới nhanh)

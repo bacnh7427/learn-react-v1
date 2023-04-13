@@ -1,0 +1,3 @@
+- Setup npm, nvm, nvx
+- Chạy lệnh khởi tạo dự án: npx create-react-app learn-reactjs
+- cd vào thư mục learn-reactjs và npm start để chạy

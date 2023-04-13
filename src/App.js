@@ -1,33 +1,42 @@
 import logo from './logo.svg';
 import './App.css';
+import TodoFeature from './features/Todo';
 
 function App() {
-  const age = 18
-  const isMale = true;
-  const student = {
-    name: 'Bac ng',
-    class: 'IT45',
-    role: 'lead',
-    proLanguage: ['Ruby', 'React', 'Python']
-  };
-  const colorList = ['red', 'green', 'blue']
-
-  return (
+    return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      <p>bac dev</p>
-      <p>Xin chao {student.name} - {age} - {isMale ? 'Male' : 'Female'}</p>
-      {isMale && "You are handsome"}
-      <p>{student.proLanguage[0]}</p>
-      <ul>
-      {colorList.map(color => (
-          <li style = {{ color }} > {color}</li>
-        ))}
-      </ul>
+          <TodoFeature />
       </header>
     </div>
   );
+
+  // const age = 18
+  // const isMale = true;
+  // const student = {
+  //   name: 'Bac ng',
+  //   class: 'IT45',
+  //   role: 'lead',
+  //   proLanguage: ['Ruby', 'React', 'Python']
+  // };
+  // const colorList = ['red', 'green', 'blue']
+
+  // return (
+  //   <div className="App">
+  //     <header className="App-header">
+  //       <img src={logo} className="App-logo" alt="logo" />
+  //     <p>bac dev</p>
+  //     <p>Xin chao {student.name} - {age} - {isMale ? 'Male' : 'Female'}</p>
+  //     {isMale && "You are handsome"}
+  //     <p>{student.proLanguage[0]}</p>
+  //     <ul>
+  //     {colorList.map(color => (
+  //         <li style = {{ color }} > {color}</li>
+  //       ))}
+  //     </ul>
+  //     </header>
+  //   </div>
+  // );
 
   // return (
   //   <div className="App">

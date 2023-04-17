@@ -1,22 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import TodoFeature from './features/Todo';
 import AlbumFeature from './features/Album';
 import ColorBox from './components/ColorBox';
 import Counter from './components/Counter';
 import Header from './components/Header';
 import Footer from './components/Footer';
+// import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
     return (
     <div className="App">
       <header className="App-header">
         <Header />
-        <Route path="/todos" component= {TodoFeature} />
-        <Route path="/albums" component= {AlbumFeature} />
-        <Route path="/colors" component= {ColorBox} />
-        <Route path="/counters" component= {Counter} />
+        <Switch>
+          <Route path="/todos" component= {TodoFeature} />
+          <Route path="/albums" component= {AlbumFeature} />
+          <Route path="/colors" component= {ColorBox} />
+          <Route path="/counters" component= {Counter} />
+        </Switch>
         <Footer />
           {/* <ColorBox />
           <Counter />

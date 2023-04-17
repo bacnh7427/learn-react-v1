@@ -1,18 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
+import { Route } from 'react-router-dom';
 import TodoFeature from './features/Todo';
 import AlbumFeature from './features/Album';
 import ColorBox from './components/ColorBox';
 import Counter from './components/Counter';
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
     return (
     <div className="App">
       <header className="App-header">
-          <ColorBox />
+        <Header />
+        <Route path="/todos" component= {TodoFeature} />
+        <Route path="/albums" component= {AlbumFeature} />
+        <Route path="/colors" component= {ColorBox} />
+        <Route path="/counters" component= {Counter} />
+        <Footer />
+          {/* <ColorBox />
           <Counter />
           <TodoFeature />
-          <AlbumFeature />
+          <AlbumFeature /> */}
       </header>
     </div>
   );

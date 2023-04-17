@@ -10,8 +10,9 @@ function Counter(props) {
     const [count, setCount] = useState(0)
     return (
         <div>
-            {count}
-            <button onClick={() => setCount(x => x + 1)}>Increase</button>
+            <p>{count}</p>
+            <button onClick={() => setCount(x => x + 100)}>Add</button>
+            <button onClick={() => setCount(x => x - 122)}>Sub</button>
         </div>
     );
 

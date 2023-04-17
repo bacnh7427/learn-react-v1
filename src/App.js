@@ -7,24 +7,24 @@ import ColorBox from './components/ColorBox';
 import Counter from './components/Counter';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import NotFound from './components/NotFound';
+import NotFound from "./components/NotFound";
 // import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
-    return (
-    <div className="App">
-      <header className="App-header">
+  return (    
+    <div className='App'>
+      <header className='App-header'>
         <Header />
         <Switch>
-          <Route path="/todos" component= {TodoFeature} />
-          <Route path="/albums" component= {AlbumFeature} />
-          <Route path="/colors" component= {ColorBox} />
-          <Route path="/counters" component= {Counter} />
+          <Route path='/todos' component={TodoFeature} />
+          <Route path='/albums' component={AlbumFeature} />
+          <Route path='/colors' component={ColorBox} />
+          <Route path='/counters' component={Counter} />
 
-          <Route component={NotFound}/>
+          <Route component={NotFound} />
         </Switch>
         <Footer />
-          {/* <ColorBox />
+        {/* <ColorBox />
           <Counter />
           <TodoFeature />
           <AlbumFeature /> */}

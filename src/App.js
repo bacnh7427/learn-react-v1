@@ -8,18 +8,9 @@ import Counter from './components/Counter';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import NotFound from "./components/NotFound";
-import React, { useEffect } from 'react';
-import productApi from './api/productApi';
 // import { Switch } from 'react-router-dom/cjs/react-router-dom.min';
 
 function App() {
-  useEffect(() => {
-    const fetchProducts = async () => {
-      const productList = await productApi.getAll();
-      console.log(productList);
-    };
-    fetchProducts
-  }, [])
   return (    
     <div className='App'>
       <header className='App-header'>

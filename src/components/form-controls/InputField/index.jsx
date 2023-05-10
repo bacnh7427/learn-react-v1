@@ -17,11 +17,14 @@ function InputField(props) {
         <Controller
             name={name}
             control={form.control}
-            as={TextField}
-            
-            fullWidth
-            label={label}
+            render = {({ field})=> (
+                <TextField
+                    fullWidth
+                    label={label}
             disabled={disabled}
+            required
+                />
+            )}
         />
     );
 }
